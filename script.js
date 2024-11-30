@@ -16,7 +16,7 @@ registerForm.addEventListener('submit', async (e) => {
   const password = document.getElementById('registerPassword').value;
 
   try {
-    const response = await fetch('http://localhost:5000/auth/register', {
+    const response = await fetch('https://psychologist-finder-backend-production.up.railway.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
