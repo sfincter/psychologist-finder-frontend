@@ -9,8 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(`${API_URL}/register`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                    // Важно: если сервер требует авторизации, добавьте:
+                    // 'Authorization': `Bearer ${yourToken}`
+                },
                 body: JSON.stringify({ name, email, password }),
+                mode: 'cors',  // Убедитесь, что используется режим CORS
             });
 
             if (!response.ok) {
