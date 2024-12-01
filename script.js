@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // 'Authorization': `Bearer ${yourToken}`
                 },
                 body: JSON.stringify({ name, email, password }),
-                mode: 'cors',  // Убедитесь, что используется режим CORS
+                mode: 'no-cors',  // Убедитесь, что используется режим CORS
             });
 
             if (!response.ok) {
