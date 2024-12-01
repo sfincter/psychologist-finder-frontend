@@ -25,4 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Failed to connect to the server');
         }
     });
+
+    
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("JavaScript is loaded!");
+
+    document.getElementById('registerBtn').addEventListener('click', () => {
+        console.log("Register button clicked!");
+    });
 });
